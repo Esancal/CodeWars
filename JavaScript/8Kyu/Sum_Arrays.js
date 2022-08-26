@@ -26,7 +26,6 @@ function sum (numbers) {
   let R = 0;
   for(i=0; i<numbers.length; i++) {
     R = R + numbers[i];
-    console.log(numbers);
   }
     return R;
 };
