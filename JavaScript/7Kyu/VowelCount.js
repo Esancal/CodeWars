@@ -21,13 +21,13 @@ function getCount(str) {
 
 // Esta funcion la copie y analice
 function getCount2(str) {
-  return (str.match(/[aeiou]/ig)||[]).length; // "||[]" -> Esta parte proteje en caso que sea enviado un null
+  return (str.match(/[aeiou]/gi) || []).length; // "||[]" -> Esta parte proteje en caso que sea enviado un null
   // .match obtiene todas las ocurrencias de una expresion regular dentro de un string
-  // "/[aeiou]/ig" -> expresion regular con un patron al interior 
+  // "/[aeiou]/ig" -> expresion regular con un patron al interior
   // "[aeiou]" -> En este caso, no se ingresa un patron como tal (se ingresa un Array)
   // Esto con el objetivo de que cada parte del interior sea tomado como caracter o un patron por si solo
   // Entonces buscara el patron "a", el patron "e", y asi.
-  
+
   // la "i" en "ig" permite que ignore si es mayuscula o minuscula
   // la "g" en "ig" permite a la expresion no detenerse al encontrar uno de las vocales
   // sin la g se detendra en la primera vocal encontrada, ademas el orden de "ig" no importa, podria ser "gi"
