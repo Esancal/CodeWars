@@ -5,5 +5,6 @@
 // Note: for this kata y isn't considered a vowel.
 
 function disemvowel(str) {
-  return str;
+  return str.replace(/[aeiou]/ig, ""); // "replace(x,y)" Reemplaza todas las x por y
+  // En mi caso hice que reemplazara cada vocal (mayus o no) con un "vacio"
 }
