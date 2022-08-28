@@ -10,5 +10,21 @@
 // Output string must be two numbers separated by a single space, and highest number is first.
 
 function highAndLow(numbers) {
-  // ...
+  let arr = numbers.split(" "); // separo el String por espacios a un array
+
+  let min = arr[0]; // Le doy un valor base a las variables
+  let max = arr[0];
+
+  // Recorremos el array
+  for (let i = 0; i < arr.length; i++) {
+    if (min > parseInt(arr[i])) {
+      // Si el valor del array es menor al valor de "min" se reemplazara
+      min = arr[i];
+    }
+    if (max < parseInt(arr[i])) {
+      // Si el valor del array es mayor al valor de "max" se reemplazara
+      max = arr[i];
+    }
+  }
+  return max + " " + min;
 }
