@@ -15,3 +15,11 @@ function solution(str, ending) {
 
 solution("abc", "bc"); // returns true
 solution("abc", "d"); // returns false
+
+/*
+Esta fue la solucion de otras personas, habia un metodo mas simple que el que use
+
+function solution(str, ending){
+  return str.endsWith(ending);
+}
+*/
