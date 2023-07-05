@@ -7,6 +7,10 @@ solution('abc', 'd') // returns false
 */
 
 function solution(str, ending) {
+  if (ending === "") return true; // No lo especificaba, sin embargo pedia cumplir esto
+  return str.substr(-ending.length) == ending;
+  // .substr permite cortar desde x cantidad de numeros en adelante
+  // Si el numero es negativo, parte desde el final
 }
 
 solution("abc", "bc"); // returns true
